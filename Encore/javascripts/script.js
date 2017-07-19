@@ -33,15 +33,17 @@ jQuery(function ($) {
   }());
 
   (function(){
-    $(".nav .dropdown").on('focusin', function(){
-      $(this).find(".dropdown-menu").each(function(){
-        $(this).css({"display":'block','opacity':'1','top':'60px'});
+    if (!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      $(".nav .dropdown").on('focusin', function(){
+        $(this).find(".dropdown-menu").each(function(){
+          $(this).css({"display":'block','opacity':'1','top':'60px'});
+        });
+      }).on('focusout', function(){
+        $(this).find(".dropdown-menu").each(function(){
+          $(this).css({"display":'block','opacity':'0','top':'0px'});
+        });
       });
-    }).on('focusout', function(){
-      $(this).find(".dropdown-menu").each(function(){
-        $(this).css({"display":'block','opacity':'0','top':'0px'});
-      });
-    });
+    }
   }());
 
   (function (){

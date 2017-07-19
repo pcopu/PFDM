@@ -45,6 +45,12 @@ h1, h2, h3, h4 {
 ----------------------------------------------- */
 .navbar-default {
   margin-bottom : 0;
+  background-color: #333333;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .navbar-header {
+    padding: 15px 0;
+  }
 }
 
 .navbar-brand {
@@ -169,6 +175,13 @@ h1, h2, h3, h4 {
     display:block !important;
   }
 }
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+}
 
 /* --------------------------------------------
     Hero Slide
@@ -240,6 +253,7 @@ h1, h2, h3, h4 {
   padding-top: 30px;
 }
 .service-card {
+  color: #686868;
   overflow: hidden;
   display: block;
 }
@@ -254,6 +268,10 @@ h1, h2, h3, h4 {
 }
 .service-card p {
   padding: 0 48px;
+  margin-bottom: 15px;
+}
+.service-card .btn {
+  border-radius: 0;
 }
 /* Features */
 .features-wrapper {
@@ -327,6 +345,12 @@ h1, h2, h3, h4 {
   background-color: #002C5B;
   box-shadow: 0 0 0 5px #002C5B;
   border-radius: 50%;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .team-block .team-card img {
+    height: 200px;
+    width: 200px;
+  }
 }
 .team-block .team-card .card-front img:hover {
   cursor: pointer;
