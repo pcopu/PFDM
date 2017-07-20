@@ -5,9 +5,6 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-h1, h2, h3, h4 {
-  font-weight: 400px;
-}
 
 /* ---------------------------------------------- /*
  * Preloader
@@ -246,6 +243,23 @@ h1, h2, h3, h4 {
 .section-wrapper {
   padding: 100px 0;
 }
+.section-title h2 {
+  font-weight: 400;
+}
+.list-style-angle {
+  margin: 20px 0;
+}
+.list-style-angle li {
+  margin: 6px 0;
+}
+.list-style-angle i {
+  margin-right: 10px;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  width: 100%;
+}
 
 /* Services */
 .services-block [class*='col-'] {
@@ -299,7 +313,8 @@ h1, h2, h3, h4 {
 }
 .services-block,
 .features-block,
-.team-block {
+.team-block,
+.clients-block {
   /*padding-bottom: 90px;*/
   padding-top: 60px;
 }
@@ -379,6 +394,101 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
+.inner-page-title {
+  background: url(../images/hero.jpg) no-repeat fixed bottom;
+  background-size: cover;
+  padding: 15% 0 5%;
+  position: relative;
+  width: 100%;
+}
+.inner-page-title:before {
+  background: rgba(0,0,0,.7);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.inner-page-title h2 {
+  display: inline-block;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.poa-block {
+  padding-bottom: 100px;
+}
+.poa-block:last-child {
+  padding-bottom: 0;
+}
+.poa-content {
+  padding-top: 60px;
+}
+.poa-content h3 {
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.clients-wrapper {
+  background-color: #f9f9f9;
+}
+.clients-block img {
+  width: 100%;
+  opacity: 0.5;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.clients-block a:hover img {
+  opacity : 1;
+}
+@media (max-width : 992px) {
+  .clients-block .section-margin {
+    margin-bottom : 30px;
+  }
+}
+
+.scaleIn {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn;
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
 /* --------------------------------------------
     Footer
 ----------------------------------------------- */
