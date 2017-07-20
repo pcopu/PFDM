@@ -316,7 +316,8 @@ body {
 .services-block,
 .message-block,
 .team-block,
-.clients-block {
+.clients-block,
+.biz-block {
   /*padding-bottom: 90px;*/
   padding-top: 60px;
 }
@@ -422,6 +423,14 @@ body {
   position: relative;
   z-index: 1;
 }
+@media only screen and (max-width: 640px) and (min-width: 360px) and (orientation: portrait) {
+  .inner-page-title {
+    padding-top: 30%;
+  }
+  .inner-page-title h2 {
+    font-size: 30px;
+  }
+}
 .poa-wrapper {
   background-color: #f8f8f8;
 }
@@ -444,11 +453,15 @@ body {
 }
 .clients-block img {
   width: 100%;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
   -webkit-transition: all 0.8s ease 0s;
   -moz-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+}
+
+.client-img{
+  max-width: 170px;
 }
 .clients-block a:hover img {
   opacity : 1;
