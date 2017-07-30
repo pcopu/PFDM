@@ -414,6 +414,24 @@ blockquote {
   background-position: center;
   color: #ffffff;
 }
+.about-whywearedifferent-flash {
+  background: #85cba8;
+  background: linear-gradient(to bottom left,#85cba8,#76c4e2);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.5em;
+  margin: 30px 0;
+}
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .about-whywearedifferent-block ul {
+    margin: 0;
+  }
+}
 .about-opportunities-wrapper {
   background: #76c4e2;
   background: linear-gradient(to bottom left,#76c4e2,#8176b5);
