@@ -430,6 +430,9 @@ blockquote {
   background-position: center;
   color: #ffffff;
 }
+.video-wrapper iframe {
+  min-height: 315px;
+}
 
 /* About Us */
 .about-history-wrapper {
