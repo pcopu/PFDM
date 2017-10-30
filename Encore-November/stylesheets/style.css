@@ -331,8 +331,10 @@ blockquote {
 }
 /* Features */
 .message-wrapper {
-  background: #85cba8;
-  background: linear-gradient(to bottom left,#85cba8,#76c4e2);
+  /*background: #85cba8;
+  background: linear-gradient(to bottom left,#85cba8,#76c4e2);*/
+  background: #76c4e2;
+  background: linear-gradient(to bottom left,#76c4e2,#8176b5);
   background-size: cover;
   background-position: center;
   color: #ffffff;
