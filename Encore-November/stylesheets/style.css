@@ -577,10 +577,14 @@ blockquote {
 }
 
 .career-team-wrapper {
-  background: url(../images/bg-node.jpg) no-repeat 100% 0;
-  background-size: cover;
+  /*background: url(../images/bg-node.jpg) no-repeat 100% 0;*/
+  /*background-size: cover;*/
   color: #ffffff;
   font-weight: 300;
+  background: #76c4e2;
+  background: linear-gradient(to bottom left,#76c4e2,#8176b5);
+  background-size: cover;
+  background-position: center;
 }
 .career-team-block p {
   font-style: italic;
@@ -616,8 +620,23 @@ blockquote {
   background-position: center;
 }
 .contactus-form h1,
+.contactus-form h3,
 .contactus-form p {
   color: #ffffff;
+  font-weight: 300;
+}
+.contactus-form__wrapper {
+  min-height: 313px;
+  position: relative;
+}
+.contactus-form__thankyou {
+  min-height: 313px;
+  text-align: center;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  -webkit-transform: translate(-10%,-50%);
+  transform: translate(-10%,-50%);
 }
 
 /*.biz-support-wrapper,*/
