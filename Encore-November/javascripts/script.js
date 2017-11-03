@@ -60,4 +60,22 @@ jQuery(function ($) {
       }
     );
   }());
+
+  (function (){
+    $('#contactUsForm').on('submit', function(e){
+      e.preventDefault();
+      $.ajax({
+        url: 'https://formspree.io/adavis@encore.dental', 
+        method: 'POST',
+        data: {
+          name: $('#contactUsForm_name').val(),
+          email: $('#contactUsForm_email').val(),
+          message: $('#contactUsForm_message').val()
+        },
+        dataType: "json"
+      }).done(function(){
+        $('.contactus-form__form').replaceWith('<div class="contactus-form__thankyou"><h1>Thanks!</h1><h3>We appreciate that you’ve taken the time to write us. We will get back to you very soon.</h3></div>');
+      });
+    });
+  }());
 });
