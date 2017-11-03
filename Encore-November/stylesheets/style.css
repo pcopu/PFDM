@@ -208,9 +208,10 @@ blockquote {
 }
 .hero-slide .carousel-caption p {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 28px;
+  text-align: justify;
 }
 @media (max-width: 1200px) {
   .hero-slide .carousel-caption h1 {
@@ -220,6 +221,7 @@ blockquote {
     font-size: 14px;
   }
 }
+
 .hero-slide .carousel-control.left,
 .hero-slide .carousel-control.right {
   width: 50px;
@@ -234,6 +236,17 @@ blockquote {
 }
 .hero-slide .carousel-indicators {
   display: none;
+}
+
+.carousel-inner{
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .carousel-inner>.item>img {
+    max-width: none;
+    margin-left: -100%;
+  }
 }
 
 .backtotop {
