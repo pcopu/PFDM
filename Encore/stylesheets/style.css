@@ -208,8 +208,10 @@ blockquote {
 }
 .hero-slide .carousel-caption p {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
+  line-height: 28px;
+  text-align: justify;
 }
 @media (max-width: 1200px) {
   .hero-slide .carousel-caption h1 {
@@ -219,6 +221,7 @@ blockquote {
     font-size: 14px;
   }
 }
+
 .hero-slide .carousel-control.left,
 .hero-slide .carousel-control.right {
   width: 50px;
@@ -233,6 +236,19 @@ blockquote {
 }
 .hero-slide .carousel-indicators {
   display: none;
+}
+
+
+
+@media (max-width: 991px) {
+  .carousel-inner>.item>img {
+    max-width: none;
+    margin-left: -100%;
+  }
+
+  .carousel-inner{
+    margin-top: 20px;
+  }
 }
 
 .backtotop {
@@ -280,6 +296,14 @@ blockquote {
   height: auto;
   width: 100%;
 }
+.bio-list-angle{
+  margin: 20px 0px;
+  columns: 2;
+}
+
+.bio-list-angle > li {
+  margin: 0;
+}
 
 /* Services */
 .services-block [class*='col-'] {
@@ -315,14 +339,17 @@ blockquote {
 .service-card p {
   padding: 0 40px;
   margin-bottom: 15px;
+  text-align: justify;
 }
 .services-block .btn {
   border-radius: 0;
 }
 /* Features */
 .message-wrapper {
-  background: #85cba8;
-  background: linear-gradient(to bottom left,#85cba8,#76c4e2);
+  /*background: #85cba8;
+  background: linear-gradient(to bottom left,#85cba8,#76c4e2);*/
+  background: #76c4e2;
+  background: linear-gradient(to bottom left,#76c4e2,#8176b5);
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -431,7 +458,13 @@ blockquote {
   color: #ffffff;
 }
 .video-wrapper iframe {
-  min-height: 315px;
+  min-height: 300px;
+}
+
+@media (min-width: 768px) {
+  .video-wrapper iframe {
+    min-height: 400px;
+  }
 }
 
 /* About Us */
@@ -475,7 +508,7 @@ blockquote {
   width: 150px;
 }
 .about-team-block.team-cards .heading-quinary {
-  color: #ffffff;
+  color: #424242;
   opacity: 0.7;
 }
 @media only screen and (max-width: 767px) and (min-width: 360px) {
@@ -561,10 +594,14 @@ blockquote {
 }
 
 .career-team-wrapper {
-  background: url(../images/bg-node.jpg) no-repeat 100% 0;
-  background-size: cover;
+  /*background: url(../images/bg-node.jpg) no-repeat 100% 0;*/
+  /*background-size: cover;*/
   color: #ffffff;
   font-weight: 300;
+  background: #76c4e2;
+  background: linear-gradient(to bottom left,#76c4e2,#8176b5);
+  background-size: cover;
+  background-position: center;
 }
 .career-team-block p {
   font-style: italic;
@@ -600,8 +637,23 @@ blockquote {
   background-position: center;
 }
 .contactus-form h1,
+.contactus-form h3,
 .contactus-form p {
   color: #ffffff;
+  font-weight: 300;
+}
+.contactus-form__wrapper {
+  min-height: 313px;
+  position: relative;
+}
+.contactus-form__thankyou {
+  min-height: 313px;
+  text-align: center;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  -webkit-transform: translate(-10%,-50%);
+  transform: translate(-10%,-50%);
 }
 
 /*.biz-support-wrapper,*/
@@ -757,7 +809,7 @@ color:#fff;
 }
 @media (max-width:500px){
   .biz-card-info{
-    display:none
+    display:block;
   }
   .biz-card:hover .biz-card-title,
   .biz-card-title{

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://encore.dental/</loc>
+  <lastmod>2017-11-07T15:34:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://encore.dental/about.html</loc>
+  <lastmod>2017-11-07T15:17:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://encore.dental/opportunities.html</loc>
+  <lastmod>2017-11-07T15:17:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://encore.dental/business.html</loc>
+  <lastmod>2017-11-07T15:17:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://encore.dental/careers.html</loc>
+  <lastmod>2017-11-06T20:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://encore.dental/contact.html</loc>
+  <lastmod>2017-11-06T20:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://encore.dental/documents/Encore%20Enterprises%20Corporate%20Brochure%20Q2%202016.pdf</loc>
+  <lastmod>2017-11-06T20:05:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

@@ -40,7 +40,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-              <img src="images/logo.png" alt="Encore Dental LLC">
+              <img src="images/logo-white.png" alt="Encore Dental LLC">
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -49,11 +49,11 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>About Us</span> <i class="fa fa-angle-down"></i></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about.html#ourmission"><span>Our Mission</span></a></li>
-                  <li><a href="about.html#messagefromfounder"><span>Message From the Chairman and Founder</span></a></li>
-                  <li class="d-none"><a href="about.html#ourhistory"><span>Our History</span></a></li>
                   <li><a href="about.html#whywearedifferent"><span>Why We Are Different</span></a></li>
+                  <li><a href="about.html#ourmission"><span>Our Mission</span></a></li>
                   <li><a href="about.html#ourteam"><span>Our Team</span></a></li>
+                  <!--<li class="d-none"><a href="about.html#ourhistory"><span>Our History</span></a></li>-->
+                  <li><a href="about.html#messagefromfounder"><span>Message From the Chairman and Founder</span></a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -99,7 +99,7 @@
                 Dallas, TX 75244<br/>
               </p>
               <p>
-                Phone: <a href="tel:214-259-2429">214-259-2429</a><br/>
+                Phone: <a href="tel:903-335-4400">903-335-4400</a><br/>
                 Email: <a href="mailto:adavis@encore.dental">adavis@encore.dental</a>
               </p>
             </div>
@@ -139,20 +139,24 @@
               </h1>
             </div>
             <div class="col-sm-6 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
-              <p>Have a question or want to get in touch?</p>
-              <p>We'd love to hear from you!</p><br/>
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="name">
+              <div class="contactus-form__wrapper">
+                <div class="contactus-form__form">
+                  <p>Have a question or want to get in touch?</p>
+                  <p>We'd love to hear from you!</p><br/>
+                  <form action="#" method="POST" id="contactUsForm">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="contactUsForm_name" name="name" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="contactUsForm_email" name="_replyto" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="contactUsForm_message" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                  </form>
                 </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
